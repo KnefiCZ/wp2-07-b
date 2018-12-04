@@ -11,20 +11,24 @@
    ?><tr><?php
       for ($j=0; $j < 10 ; $j++) {
         ?><td><?php
-          echo $numbers[$i][$j]=rand(0,100);
+          $numbers[$i][$j] = rand(0,100);
+          echo $numbers[$i][$j];
         ?></td><?php
         }
     ?></tr><?php
   }
-  $iRand=rand(0,9);
-  $jRand=rand(0,9);
-  $sum=0;
-  for ($s=0; $s < 10; $s++) {
 
-  }
-  echo $sum;
+
 ?>
   </table>
-
+<?php
+$sum=0;
+for ($s=0; $s < 10; $s++) {
+  $iRand=rand(0,9);
+  $jRand=rand(0,9);
+  $sum = $sum + $numbers[$iRand][$jRand];
+}
+echo "Součet vybraných čísel ze sloupce i=$i a řady j=$j se rovná " . $sum;
+ ?>
   </body>
   </html>
