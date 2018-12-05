@@ -28,7 +28,7 @@ for ($s=0; $s < 10; $s++) {
   $jRand=rand(0,9);
   $sum = $sum + $numbers[$iRand][$jRand];
 }
-echo "Součet vybraných čísel ze sloupce i=$i a řady j=$j se rovná " . $sum;
+echo "Součet vybraných čísel ze řádku i=$iRand a sloupce j=$jRand se rovná " . $sum;
  ?>
   </body>
   </html>
